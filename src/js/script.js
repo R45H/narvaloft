@@ -90,6 +90,18 @@ $(function() {
 			});
 		}
 		/* ==== */
+
+		/* Links */
+		$items.on('click', function() {
+			var
+				$this = $(this),
+				link = $this.attr('data-link');
+
+			if (!link) return;
+
+			window.open(link, '_blank')
+		});
+		/* ===== */
 	}());
 	/* ==== */
 });
